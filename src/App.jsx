@@ -12,7 +12,7 @@ import BusinessProducts from './components/BusinessProducts';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/Banking-Website">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
