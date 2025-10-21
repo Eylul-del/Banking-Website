@@ -1,10 +1,10 @@
 import '../components/style/Security.css';
 import FAQ from './FAQ.jsx';
-import mainImage from '../assets/images/img/Security/mainImage.png';
-import Icon from '../assets/images/img/Security/Icon Container.png';
-import Icon1 from '../assets/images/img/Security/Icon Container (1).png';
-import Icon2 from '../assets/images/img/Security/Icon Container (2).png';
-import Icon3 from '../assets/images/img/Security/Icon Container (3).png';
+import mainImage from 'public/images/img/Security/mainImage.png';
+import Icon from 'public/images/img/Security/Icon Container.png';
+import Icon1 from 'public/images/img/Security/Icon Container (1).png';
+import Icon2 from 'public/images/img/Security/Icon Container (2).png';
+import Icon3 from 'public/images/img/Security/Icon Container (3).png';
 export default function Security(){
     return(
         <div className='pageContainer'>

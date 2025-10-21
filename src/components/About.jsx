@@ -1,11 +1,11 @@
-import mainImage from '../assets/images/img/About/mainImage.png';
+import mainImage from 'public/images/img/About/mainImage.png';
 import '../components/style/About.css'
-import Image1 from '../assets/images/img/About/Image (1).png';
-import Image2 from '../assets/images/img/About/Image (2).png';
-import Image3 from '../assets/images/img/About/Image (3).png';
-import Image4 from '../assets/images/img/About/Image (4).png';
-import Image5 from '../assets/images/img/About/Image (5).png';
-import Image6 from '../assets/images/img/About/Image (6).png';
+import Image1 from 'public/images/img/About/Image (1).png'
+import Image2 from 'public/images/img/About/Image (2).png';
+import Image3 from 'public/images/img/About/Image (3).png';
+import Image4 from 'public/images/img/About/Image (4).png';
+import Image5 from 'public/images/img/About/Image (5).png';
+import Image6 from 'public/images/img/About/Image (6).png';
 
 export default function About(){
     return(

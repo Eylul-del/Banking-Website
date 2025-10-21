@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './style/Header.css';
-import HomeCorner from '../assets/images/img/homeCorner.png';
-import Logo from '../assets/images/img/logo.png';
-import navBtn from '../assets/images/icon/sideBarBtn.png';
+import HomeCorner from 'public/images/img/homeCorner.png';
+import Logo from 'public/images/img/logo.png';
+import navBtn from 'public/images/icon/sideBarBtn.png';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);

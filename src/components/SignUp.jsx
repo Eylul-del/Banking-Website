@@ -1,9 +1,9 @@
 import '../components/style/signUp.css'
 import { Link } from 'react-router-dom'
 import OurTestimonials from './OurTestimonials.jsx'
-import Icon from '../assets/images/img/Login/Icon.png';
-import Icon1 from '../assets/images/img/Login/Icon1.png';
-import Icon2 from '../assets/images/img/Login/Icon2.png';
+import Icon from 'public/images/img/Login/Icon.png';
+import Icon1 from 'public/images/img/Login/Icon1.png';
+import Icon2 from 'public/images/img/Login/Icon2.png';
 export default function SignUp(){
     return(
         <div className='pageContainer'>

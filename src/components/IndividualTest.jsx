@@ -1,4 +1,4 @@
-import IconContainer1 from '../assets/images/icon/Icon (1).png'
+import IconContainer1 from 'public/images/icon/Icon (1).png'
 
 
 export default function IndividualTest(){
