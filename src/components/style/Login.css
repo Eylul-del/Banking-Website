@@ -1,0 +1,407 @@
+:root {
+  --green60: #CAFF33;
+  --green65: #D1FF4D;
+  --green70: #D8FF66;
+  --darkGreen70: #d9ff6670;
+  --green80: #E5FF99;
+  --green90: #F2FFCC;
+  --green95: #F8FFE5;
+  --green97: #FBFFF0;
+  --green99: #FEFFFA;
+
+  --white90: #E4E4E7;
+  --white95: #F1F1F3;
+  --white97: #F7F7F8;
+  --white99: #FCFCFD;
+
+  --gray10: #1A1A1A;
+  --gray11: #1C1C1C;
+  --gray15: #262626;
+  --gray20: #333333;
+  --gray30: #4C4C4D;
+  --gray35: #59595A;
+  --gray40: #656567;
+  --gray60: #98989A;
+  --gray70: #B3B3B3;
+  --gray75: #BFBFBF;
+} 
+
+.loginMain{
+  background: linear-gradient(135deg, #1e2807, #161d05, #0a0e02, black, #161d05, #1e2807);
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center; 
+  align-items: center;
+  min-height: 100vh;
+}
+
+.loginMain *{
+  text-align: center !important;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.loginMain .title{
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.loginMain .title h1{
+  color: var(--green65);
+}
+
+.loginMain .title p{
+  color: var(--gray70);
+}
+
+form{
+  width: 70% !important;
+}
+
+  .inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+  }
+
+  .inputs input{
+    height: 65%;
+    width: 45%;
+    border-radius: 30px;
+    background-color: var(--gray11);
+    border: 2px solid var(--gray15);
+    text-align: left !important;
+    padding: 20px;
+    color: var(--gray70);
+  }
+
+  input::placeholder{
+    color: var(--gray60);
+    font-size: 0.9rem;
+  }
+
+  input:focus{
+    outline-color: var(--gray20);
+  }
+
+  .passwordChange{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .passwordChange a{
+    color: white;
+    font-size: 1.1rem;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 120px;
+  }
+
+  .buttons button{
+    height: 37%;
+    width: 80%;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.1rem;
+  }
+
+  .buttons button:first-child{
+    background-color: var(--green60);
+  }
+
+  .buttons button:last-child a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .continueWith{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px !important;
+    width: 50%;
+  }
+
+  .continueWith span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px !important;
+    font-size: 1.2rem ;
+    color: var(--gray70);
+    line-height: 30px;
+  }
+
+  .continueWith span::before,
+  .continueWith span::after{
+    content: "";
+    height: 2px;
+    width: 150px;
+    margin: 0 20px;
+    background-color: var(--gray60);
+  }
+
+  .continueWith .options{
+    display: flex;
+    justify-content: space-around !important;
+    width: 50%;
+  }
+
+@media (max-width:2560px) {
+  .loginMain{
+    max-width: 80%;
+    min-height: 70vh !important;
+  }
+
+  .loginMain .title h1{
+    font-size: 4rem !important;
+  }
+
+  .loginMain .title p{
+    font-size: 2rem;
+  }
+
+  .inputs input{
+    height: 100%;
+    padding: 30px;
+    border-radius: 50px !important;
+  }
+
+  .inputs input::placeholder{
+    font-size: 1.6rem;
+  }
+
+  .passwordChange a{
+    font-size: 1.8rem;
+  }
+
+  .buttons{
+    height: 200px;
+  }
+
+  .buttons button{
+    height: 30%;
+    font-size: 2rem;
+  }
+
+  .continueWith span{
+    font-size: 2rem;
+    margin: -30px auto;
+  }
+}
+
+@media (max-width:1920px) {
+  .loginMain{
+    min-width: 90%;
+    min-height: 100vh !important;
+  }
+  .loginMain .title h1{
+    font-size: 2.5rem !important;
+  }
+
+  .loginMain .title p{
+    font-size: 1.3rem !important;
+  }
+
+  form{
+    width: 70% !important;
+  }
+
+  .inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+  }
+
+  .inputs input{
+    height: 65%;
+    width: 45%;
+    border-radius: 30px;
+    background-color: var(--gray11);
+    border: 2px solid var(--gray15);
+    text-align: left !important;
+    padding: 20px;
+    color: var(--gray70);
+  }
+
+  input::placeholder{
+    color: var(--gray60);
+    font-size: 0.9rem !important;
+  }
+
+  input:focus{
+    outline-color: var(--gray20);
+  }
+
+  .passwordChange{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .passwordChange a{
+    font-size: 1.1rem;
+  }
+
+  .buttons{
+    width: 50%;
+    height: 120px;
+  }
+
+  .buttons button{
+    height: 37%;
+    width: 80%;
+    font-size: 1.1rem;
+  }
+
+  .continueWith{
+    height: 200px !important;
+    width: 50%;
+  }
+
+  .continueWith span{
+    height: 50px !important;
+    font-size: 1.2rem;
+    color: var(--gray70);
+    line-height: 30px;
+  }
+
+  .continueWith .options{
+    width: 50%;
+  } 
+}
+
+@media (max-width:1440px) {
+  .loginMain{
+    min-width: 90% !important;
+    min-height: 100vh !important;
+  }
+
+  .loginMain .title h1{
+    font-size: 3rem !important;
+  }
+
+  .loginMain .title p{
+    font-size: 1.5rem;
+  }
+
+  .inputs input::placeholder{
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .loginMain{
+    min-height: 110vh  !important;
+  }
+
+  .loginMain .title h1{
+    font-size: 2.2rem !important;
+  }
+
+  .loginMain .title p{
+    font-size: 1.3rem !important;
+  }
+
+  .inputs,
+  .buttons,
+  .continueWith{
+    width: 100%;
+  }
+
+  .inputs input{
+    width: 45%;
+  }
+
+  .inputs input::placeholder{
+    font-size: 1rem;
+  }
+
+  .continueWith{
+    height: 150px !important;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto 0;
+  }
+}
+
+@media (max-width:770px) {
+  .loginMain{
+    height: auto !important;
+  }
+  .inputs{
+    height: auto !important;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .inputs input{
+    width: 100%;
+    padding: 15px 20px ;
+  }
+}
+
+@media (max-width:426px) {
+
+  .loginMain{
+    max-width: 110vh !important;
+    min-height: 120vh !important;
+    padding: 0 !important;
+  }
+
+  .loginMain .title p{
+    width: 90%;
+    font-size: 1.1rem !important;
+  }
+
+  .inputs,
+  .buttons{
+    width: 100% !important;
+    gap: 20px;
+    height: auto !important;
+    flex-wrap: wrap !important;
+    margin: 30px auto;
+  }
+
+  .inputs input{
+    width: 100%;
+    padding: 15px 20px;
+  }
+
+  .buttons button{
+    width: 100%;
+    padding: 10px;
+  }
+
+  .continueWith span{
+    font-size: 1rem;
+  }
+
+  .continueWith span::before,
+  .continueWith span:after{
+    width: 75px;
+    margin: 15px;
+  }
+
+  .continueWith .options{
+    height: 40%;
+    margin: 15px auto 0 !important;
+    width: fit-content ;
+    gap: 10px;
+  }
+}

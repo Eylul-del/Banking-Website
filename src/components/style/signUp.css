@@ -1,0 +1,19 @@
+
+.loginMain{
+    justify-content: space-around;
+}
+
+.inputs{
+    flex-wrap: wrap;
+    gap: 10px 5px;
+    height: 150px;
+    margin: 20px auto;
+}
+
+.inputs input{
+    height: 40%;
+}
+
+.buttons{
+    margin: 30px auto 0;
+}

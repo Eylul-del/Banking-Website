@@ -1,0 +1,1630 @@
+:root {
+  --green60: #CAFF33;
+  --green65: #D1FF4D;
+  --green70: #D8FF66;
+  --green80: #E5FF99;
+  --green90: #F2FFCC;
+  --green95: #F8FFE5;
+  --green97: #FBFFF0;
+  --green99: #FEFFFA;
+
+  --white90: #E4E4E7;
+  --white95: #F1F1F3;
+  --white97: #F7F7F8;
+  --white99: #FCFCFD;
+
+  --gray10: #1A1A1A;
+  --gray11: #1C1C1C;
+  --gray15: #262626;
+  --gray20: #333333;
+  --gray30: #4C4C4D;
+  --gray35: #59595A;
+  --gray40: #656567;
+  --gray60: #98989A;
+  --gray70: #B3B3B3;
+  --gray75: #BFBFBF;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.pageContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+main{  
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 700px;
+    margin: 100px auto;
+    overflow-x: hidden;
+    background-color: var(--gray11);
+    border-radius: 30px;
+}
+
+main div{
+    width: 40%;
+}
+
+main .colOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    margin-left: -50px;
+    color: white;
+}
+
+.mainSub1{
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+    background-color: var(--gray15);
+}
+
+.mainTitle{
+    width: 100%;
+}
+
+.colOne .mainTitle h1{
+    width: 100%;
+    line-height: 50px;
+    letter-spacing: 0.5px;
+    font-size: 43px;
+}
+
+.mainSub2{
+    width: 100%;
+    line-height: 25px;
+}
+
+.mainSub2 p{
+    width: inherit;
+}
+
+.colOne .mainTitle h1 span{
+    color: var(--green60);
+}
+
+.colOne .openAccount{
+    width: fit-content;
+    height: 45px;
+    border-radius: 40px;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    background-color: var(--green65);
+}
+
+.openAccount a{
+    text-decoration: none;
+    color:  black;
+}
+
+main .colTwo{
+    position: relative;
+    height: 550px;
+    width: 40%;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    z-index: 2;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: var(--gray10);
+    border: 2px solid var(--gray15);
+}
+
+.colTwo .cardImg{
+    width: 95%;
+}
+
+.cardImg img{
+    width: inherit;
+}
+
+.colTwo .cardImg p{
+    font-size: 25px;
+}
+
+main .monthIncomeCard{
+    position: absolute;
+    top: -45px;
+    left: -60px;
+    width: 210px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    box-sizing: border-box;
+    padding: 10px 10px 20px 15px;
+    border-radius: 15px;
+    background-color: #22251B;
+}
+
+.monthIncomeCard .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 100%;
+    letter-spacing: 0.5px;
+    color: white;
+    line-height: 10px;
+    margin-bottom: 10px;
+}
+
+.monthIncomeCard p,
+.monthIncomeCard span{
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+}
+
+.monthIncomeCard img{
+    width: 40px;
+    height: 40px;
+}
+
+.rightImg{
+    position: absolute;
+    right: -140px;
+    top: 0;
+    z-index: 0;
+}
+
+.colTwo .mainTransactionsCard,
+.cardContent{
+    width: 100%;
+}
+
+main .colTwo .mainTransactionsCard .countries{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: var(--gray11);
+    border: 1px solid var(--gray15);
+}
+
+.countries .countryCard{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 5px 15px;
+}
+
+.countryCard:first-child{
+  border-right: 1px solid var(--gray15);
+}
+
+.countryIcon{
+    width: 100%;
+}
+
+.countries .countryCard .countryIcon div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    border-bottom: 2px solid var(--gray15);
+}
+
+.colTwo .exchangeBtn{
+    border: 1px solid var(--gray15);
+    width: 90%;
+    margin: 20px auto 10px;
+    border-radius: 30px;
+}
+
+.exchangeBtn button{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    color: var(--green65);
+    cursor: pointer;
+    background-color: #22251B;
+}
+
+.supportedCurrency{
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 5px 0;
+    color: white;
+    border-radius: 40px;
+    border: 1px solid var(--gray20);
+}
+
+.currencies{
+    height: 100%;
+    width: 40%;
+}
+
+.supportedCurrency img{
+    height: 100%;
+    width: 100%;
+}
+
+.ourProducts .btns{
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  display: inline;
+  height: auto;
+  margin: 150px auto;
+}
+
+.sectionHeader{
+  display: flex;
+  align-items: center;
+  height: 150px;
+  width: 90% !important;
+  gap: 0 !important;
+  flex-direction: row !important;
+  margin: 0 auto;
+}
+
+.ourFeatures .sectionHeader{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: fit-content;
+  width: 80% !important;
+  margin: 0 auto;
+}
+
+.sectionHeader .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 70%;
+  height: 120px;
+}
+
+.sectionHeader .text h2{
+  font-size: 33px;
+  color: white;
+}
+
+.sectionHeader .text h2 span{
+  color: var(--green65);
+}
+
+.sectionHeader .text p{
+  color: var(--gray70);
+  display: flex;
+  width: 90%;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.btns{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+  border: 2px solid var(--gray20);
+  background-color: var(--gray11);
+  width: 40%;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.btns button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 45%;
+  padding: 10px;
+  border-radius: 40px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  border-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* When active (clicked) */
+.btns button.active {
+  background-color: var(--green65) !important;
+  color: #000 !important;
+}
+
+.btns button:first-child.active:last-child{
+  border: 1px solid var(--gray15);
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.btns button:first-child{
+  background-color: transparent;
+  color: white;
+}
+
+.btns button:last-child{
+  background-color: transparent;
+  color: white;
+}
+
+.productsCards{
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto 0;
+}
+
+.productsCards .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 33%;
+  height: 90%;
+  box-sizing: border-box;
+  padding: 10px 35px;
+  text-align: left;
+}
+
+.card .img,
+.card .img img{
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px;
+}
+
+.card .title{
+  color: white;
+}
+
+.card .text{
+  width: 100%;
+  color: var(--gray70);
+  line-height: 23px;
+}
+
+.productsCards .card:not(:last-child){
+  border-right: 2px solid var(--gray15);
+}
+
+.useCases{
+  margin: -50px auto 50px;
+}
+
+
+.useCasesContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 70px;
+  margin: 30px auto;
+}
+
+.col{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.col .features{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px ;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--gray11);
+  border: 2px solid var(--gray15);
+}
+
+.features .feature{
+  width: 45%;
+  height: 150px;
+  text-align: center;
+  color: var(--gray70);
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border: 2px solid var(--gray15);
+  background-color: var(--gray10);
+}
+
+.feature img{
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 10px;
+}
+
+.feature p{
+  margin-top: 0px;
+  color: white;
+}
+
+.colDescription{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 400px;
+}
+
+.colDescription h3{
+  color: white;
+  font-size: 23px;
+}
+
+.colDescription .text p{
+  color: var(--gray70);
+}
+
+.achievement{
+  display: flex;
+  gap: 5%;
+  margin: 30px auto;
+}
+
+.achievement div{
+  width: calc(90% / 3);
+  height: auto;
+}
+
+.achievement div span{
+  color: var(--green65);
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.achievement div p{
+  color: var(--gray70);
+}
+
+.learnMore{
+  width: 25%;
+  height: 40px;
+  padding: 5px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--gray15);
+}
+
+.learnMore button{
+  height: inherit;
+  width: 100%;
+  border-radius: inherit;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.ourFeatures{
+  margin: 100px auto;
+}
+
+.ourFeatures .sectionContent{
+  display: flex !important;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row !important;
+  width: 100% !important;
+  height: auto !important;
+  padding: 0 !important;
+  color: white;
+  margin: 50px auto 0px !important;
+}
+
+.featuresOptions{
+  height: auto;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 50px;
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 100px;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: var(--gray11);
+  border: 2px solid var(--gray15);
+  border-radius: 20px;
+}
+
+.featuresOptions button.active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 30px;
+  font-size: 19px;
+  color: var(--green65) !important;
+  background-color: transparent !important;
+  border: 2px solid var(--gray15);
+}
+
+.featuresOptions button{
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: var(--gray70);
+}
+
+.featuresContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px 10px;
+  width: 75% !important;
+  height: auto;
+  margin: 0;
+}
+
+.featuresContainer .featureCard{
+  width: 49%;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: var(--gray11);
+}
+
+.featureCard p{
+  color: var(--gray70);
+  line-height: 150%;
+}
+
+.questions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 90%;
+  height: auto !important;
+  margin: 50px auto 100px;
+}
+
+.questions .questionCard{
+  width: 45%;
+  height: 400px;
+  background-color: var(--gray11);
+  border: 2px solid var(--gray15);
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.questionCard .title{
+  color: white;
+  font-size: 15px;
+  border-bottom: 2px solid var(--gray20);
+}
+
+.questionCard .text{
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 180%;
+  font-size: 15px;
+  color: var(--gray70);
+}
+
+.testimonialsCards{
+  width: 90%;
+  height: 350px;
+  margin: 100px auto;
+  gap: 50px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+}
+
+.testimonialsCards .card{
+  width: 27%;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  padding: 20px;
+  border-top: 3px solid var(--gray15);
+  border-bottom: 3px solid var(--gray15);
+  border-radius: 20px;
+}
+
+.card img{
+  position: relative;
+  top: -60px;
+  z-index: 99;
+  background-color: var(--gray11);
+}
+
+.card .opinion{
+  color: var(--gray70);
+  line-height: 150%;
+  height: 70%;
+}
+
+.card .name{
+  color: var(--green65);
+  font-size: 20px;
+}
+
+
+.lastOpenAccount{
+  width: 100%;
+  height: 250px;
+  margin: 50px auto;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 40px;
+  border-radius: 30px;
+  border: 2px solid var(--gray15);
+  background-color: var(--gray11);
+}
+
+.lastOpenAccount .sectionHeader{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  height: fit-content;
+}
+
+.lastOpenAccount .sectionHeader .text{
+  width: 80%;
+  height: auto;
+}
+
+.lastOpenAccount .btn{
+  height: 50px;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 30px;
+  color: black;
+  border: 2px solid var(--gray11);
+  background-color: var(--green65);
+}
+
+.btn a{
+  text-decoration: none;
+  color: black;
+}
+
+
+@media screen and (min-width: 2560px) {
+  body {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+  }
+
+  .pageContainer {
+    width: 90%;
+    max-width: 2300px;
+  }
+
+  .useCases,
+  .ourFeatures,
+  .lastOpenAccount,
+  .popularQuestions,
+  .testimonialsCards,
+  .questions {
+    width: 90%;
+    margin: 50px auto;
+    padding: 70px 0 !important;
+    height: auto !important;
+  }
+
+  main{
+    width: 100% !important;
+    max-width: 2560px;
+    min-height: 80vh;
+    gap: 100px;
+  }
+
+  .sectionHeader .text p {
+    font-size: 1.1rem;
+  }
+
+  .colOne .mainTitle h1 {
+    font-size: 3rem;
+    line-height: 65px;
+  }
+
+  .colOne p{
+    font-size: 2.2rem;
+    line-height: 150%;
+  }
+
+  .colOne .openAccount{
+    padding: 35px;
+    width: fit-content;
+    font-size: 2rem;
+  }
+
+  .colTwo{
+    height: 82% !important;
+  }
+
+  .supportedCurrency{
+    width: 100% !important;
+    bottom: 10px !important;
+    right: 15%;
+    bottom: -70px !important;
+    max-width: 70% !important;
+  }
+
+  .colTwo .cardImg p{
+    font-size: 2rem !important;
+  }
+
+  .colTwo .countryCard {
+    font-size: 2rem !important;
+  }
+
+  .exchangeBtn button{
+    font-size: 2rem !important;
+  }
+
+  .rightImg{
+    right: -300px !important;
+  }
+
+  .rightImg img{
+        height: 500px;
+    width: 500px;
+  }
+
+  .monthIncomeCard{
+    top: -60px !important;
+    font-size: 1.8rem;
+    width: 45% !important;
+    height: fit-content !important;
+  }
+
+  .monthIncomeCard .text{
+    width: 70%;
+  }
+
+  .monthIncomeCard img{
+    height: 90px;
+    width: 90px;
+  }
+
+  .supportedCurrency{
+    font-size: 1.8rem;
+    height: 75px;
+    bottom: -100px !important;
+  }
+
+  .ourFeatures .sectionContent{
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    height: auto !important;
+  }
+
+  .featuresContainer{
+    width: 90% !important;
+  }
+
+  .featuresContainer .featureCard {
+    padding: 30px;
+  }
+
+  .testimonialsCards{
+    margin: 0 auto;
+  }
+
+  .popularQuestions .sectionHeader .text h2{
+    font-size: 3rem !important;
+  }
+
+  .popularQuestions .sectionHeader .text p{
+    font-size: 2rem;
+  }
+
+  .popularQuestions .questionCard{
+    width: 47%;
+    height: 650px !important;
+  }
+
+  .questionCard .title {
+    font-size: 2rem !important;
+  }
+
+  .questionCard p{
+        font-size: 2rem;
+        line-height: 150%;
+  }
+
+  .lastOpenAccount{
+    padding: 50px !important;
+    width: 80%;
+  }
+}
+
+@media (max-width: 1920px) {
+  .pageContainer{
+    width: 100% !important;
+  }
+
+  main{
+    width: 100% !important;
+    min-height: auto;
+    max-width: none;
+    overflow-x: hidden !important;
+  }
+  
+  main .colTwo{
+    height: 80% !important;
+    width: 40% !important;
+  }
+
+  .monthIncomeCard{
+    top: -70px !important;
+  }
+
+  .sectionHeader .text h2{
+    font-size: 2rem !important;
+  }
+
+  .sectionHeader .text p{
+    font-size: 1.2rem !important;
+  }
+
+  .ourProducts .productsCards{
+    gap: 30px;
+    height: auto !important;
+  }
+
+  .ourProducts .card {
+    border-radius: 30px;
+    background-color: var(--gray11);
+  }
+
+  .ourProducts .card img{
+    top: 0 ;
+  }
+
+  .ourProducts .card p{
+    font-size: 1rem !important;
+  }
+
+  .useCases{
+    margin: 50px auto 0;
+  }
+
+  .questionCard{
+    height: 350px !important;
+    width: 45% !important;
+  }
+
+  .questionCard .title{
+    font-size: 1.15rem;
+  }
+
+  .questionCard p{
+    font-size: 1.1rem;
+  }
+
+  .ourTestimonials .card{
+    overflow: visible;
+  }
+
+  .ourTestimonials .card p{
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (max-width:1440px) {
+  main{
+    height: 80vh !important;
+    min-height: 85vh;
+    }
+
+    .questionCard p{
+      font-size: 1.2rem !important;
+    }
+}
+
+@media (max-width:1025px) {
+  .pageContainer{
+    width: 80% !important;
+    max-width: 1025px !important;
+  }
+  
+  main{
+    width: 90% !important;
+    min-height: 100vh;
+    gap: 0px !important;
+    padding: 40px !important;
+    overflow-x: hidden;
+    margin: 50px auto 100px !important;
+  }
+
+  .ourProducts .btns,
+  .useCases,
+  .ourFeatures,
+  .lastOpenAccount,
+  .testimonialsCards,
+  .questions,
+  .sectionHeader,
+  .sectionContent{
+    height: auto;
+    width: 90% !important;
+  }
+
+  .colOne,
+  .colTwo{
+    width: 43% !important;
+    height: auto !important;
+  }
+
+  .colOne .mainSub1{
+    font-size: small;
+  }
+
+  main .colOne h1{
+    font-size: 30px !important;
+  }
+
+  .colOne .openAccount{
+    margin: 0;
+  }
+
+  .rightImg{
+    top: 10px;
+    right: 70px;
+  }
+
+  .monthIncomeCard{
+    height: auto !important;
+    font-size: small;
+    padding: 0 10px !important;
+    top: -30px !important;
+  }
+
+  .monthIncomeCard img{
+    height: 30px !important;
+    width: 30px !important;
+  }
+
+  .colTwo h2{
+    font-size: 18px;
+  }
+
+  .ourProducts .sectionHeader{
+    height: 150px !important;
+    padding: 0 !important;
+
+  }
+
+  .ourProducts .btns{
+    display: flex !important;
+    flex-direction: row;
+    padding: 5px;
+    width: 35% !important;
+  }
+
+  .btns button{
+    font-size: 11px !important;
+    width: 45% !important;
+    height: auto;
+  }
+
+  .ourProducts .productsCards{
+    width: 100%;
+    gap: 0 !important;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap !important;
+    margin: 0 auto;
+  }
+
+  .productsCards .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    gap: 0 !important;
+    width: 45%;
+    margin: 20px auto;
+    height: 400px !important;
+    border: 2px solid var(--gray15);
+    border-radius: 30px;
+  }
+
+  .productsCards .card .img{
+    margin: 0px auto !important;
+  }
+
+  .productsCards .card .img img{
+    margin: 0 auto !important;
+    top: 0;
+  } 
+
+  .useCases{
+    margin: 0 auto;
+  }
+
+  .useCases .useCasesContent{
+    height: auto !important;
+    width: 100% !important;
+  }
+
+  .useCasesContent .col{
+    height: auto !important;
+    font-size: 0.85rem;
+  }
+
+  .col .features{
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .col .feature{
+    width: 49%;
+  }
+
+  .col .colDescription{
+    justify-content: center;
+  }
+
+  .colDescription .learnMore{
+    width: inherit;
+  }
+
+  .ourFeatures .sectionContent{
+    gap: 30px;
+    justify-content: space-between !important;
+  }
+
+  .featuresOptions{
+    width: 30%;
+    margin: 0;
+  }
+
+  .featuresOptions button{
+    font-size: 1.1rem !important;
+  }
+
+  .sectionContent .featuresContainer{
+    width: 100% !important;
+    flex-wrap: wrap !important;
+  }
+
+  .questions{
+    gap: 40px;
+  }
+
+  .questionCard{
+    width: 45% !important;
+    height: 450px !important;
+  }
+
+  .questionCard .title h3{
+    font-size: 1.1rem;
+  }
+
+  .testimonialsCards{
+    padding: 0 !important;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .testimonialsCards .card{
+    width: 40%;
+  }
+
+  .testimonialsCards .card img{
+    height: 50px;
+  }
+
+  .questionCard p{
+    font-size: 1rem !important;
+  }
+
+  .lastOpenAccount{
+    padding: 0;
+    height: 250px !important;
+  }
+
+  .lastOpenAccount .btn{
+    width: 20%;
+  }
+}
+
+@media (max-width:770px) {
+  .pageContainer{
+    width: 90% !important;
+  }
+
+  .supportedCurrency {
+    gap: 5px;
+    font-size: 0.8rem;
+  }
+  
+  .ourProducts .sectionHeader,
+  .ourTestimonials .sectionHeader{
+    flex-direction: column !important;
+    gap: 30px !important;
+    height: auto !important;
+  }
+
+  .ourProducts .sectionHeader .btns,
+  .ourTestimonials .sectionHeader .btns{
+    height: auto !important;
+    width: 50% !important;
+    margin: 0 auto 40px;
+  }
+
+  .ourProducts .sectionHeader .btns button,
+  .ourTestimonials .sectionHeader .btns button{
+    font-size: 0.95rem !important;
+  }
+
+  .col .features .feature{
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    padding: 10px;
+    width: 48%;
+  }
+
+  .col .features .feature img{
+    height: 40px;
+    width: 40px;
+  }
+
+  .col .colDescription .achievement > div span{
+    font-size: 30px;
+  }
+
+  .ourFeatures .sectionContent {
+    flex-direction: column !important;
+  }
+
+  .sectionContent .featuresOptions{
+    width: 75%;
+    display: flex !important;
+    flex-direction: row;
+    gap: 3%;
+    border-radius: 50px;
+    height: auto;
+    padding: 5px;
+  }
+
+  .featuresOptions button{
+    width: 30% !important;
+    font-size: 0.93rem !important;
+  }
+
+  .featuresContainer .featureCard{
+    width: 48%;
+  }
+
+  .popularQuestions .sectionHeader p{
+    width: 100%;
+  }
+
+  .questions{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .questionCard{
+    width: 90% !important;
+    height: auto !important;
+  }
+
+  .ourTestimonials .sectionHeader{
+    flex-direction: column;
+    height: auto !important;
+    gap: 40px;
+    padding: 0 20px 20px;
+  }
+
+  .ourTestimonials .sectionHeader .btns{
+    width: 50%;
+  }
+
+  .ourTestimonials .testimonialsCards{
+    flex-direction: column;
+    width: inherit;
+    gap: 40px;
+    margin: 30px auto;
+  }
+
+  .testimonialsCards .card{
+    width: 90% !important;
+    height: auto;
+    justify-content: center !important;
+    padding: 30px;
+  }
+
+  .testimonialsCards .card img{
+    top: -30px;
+    right: 40px !important;
+    position: absolute;
+  }
+
+  .lastOpenAccount{
+    height: auto !important;
+  }
+
+  .lastOpenAccount .sectionHeader{
+    display: flex ;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+    gap: 20px;
+    text-align: center;
+    padding: 0 20px 20px;
+  }
+
+  .lastOpenAccount .sectionHeader .text{
+    width: 90% !important;
+    height: auto;
+  }
+
+  .lastOpenAccount .sectionHeader .btn{
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 426px) {
+  .pageContainer{
+    width: 100% !important;
+  }
+
+  .pageContainer main {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    height: auto !important;
+    margin: 0px auto;
+    padding: 0 20px;
+    overflow: visible;
+  }
+
+  main div {
+    width: 100%;
+  }
+
+  .colOne {
+    margin-left: 0 !important;
+    text-align: center;
+    width: 90% !important;
+    height: 600px !important;
+  }
+
+  .mainSub1 {
+    margin: 0 auto 15px;
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .mainTitle h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .mainSub2 p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .openAccount {
+    width: 40% !important;
+    margin: 30px auto !important;
+  }
+
+  .colTwo {
+    width: 100% !important;
+    height: auto !important;
+    padding: 10px !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .monthIncomeCard {
+    width: 90%;
+    left: -15px !important;
+    height: 60px !important;
+    margin: 10px auto;
+    padding: 0 0 5px 15px !important;
+  }
+
+  .monthIncomeCard img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .colTwo .cardImg p {
+    font-size: 20px;
+  }
+
+  .countries {
+    gap: 10px;
+  }
+
+  .countryCard {
+    width: 100%;
+  }
+
+  .exchangeBtn {
+    width: 100%;
+  }
+
+  .supportedCurrency {
+    position: static;
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .rightImg {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    left: 70px;
+    top: 550px !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .rightImg img {
+    width: 80%;
+    bottom: inherit;
+    position: absolute;
+  }
+
+  .ourProducts .btns{
+    margin-top: 70px;
+    height: fit-content;
+  }
+
+  .ourProducts .sectionHeader{
+    flex-wrap: wrap;
+    height: auto !important;
+  }
+
+  .sectionHeader .text{
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .sectionHeader .text h2{
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .ourProducts .sectionHeader .btns,
+  .ourTestimonials .sectionHeader .btns{
+    width: 80% !important;
+    margin: 0 auto;
+  }
+
+  .ourProducts .sectionHeader .btns button,
+  .ourTestimonials .sectionHeader .btns button{
+    font-size: 0.75rem !important;
+  }
+
+
+  .productsCards{
+    width: 100%;
+    margin: 50px auto !important;
+  }
+
+  .productsCards .card{
+    width: 100%;
+    height: auto  !important;
+    margin: 10px auto;
+    border: none !important;
+  }
+
+  .useCasesContent{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .col{
+    width: 90%;
+  }
+
+  .col:last-child{
+    margin-top: 0;
+  }
+
+  .col:last-child .colDescription{
+    order: 1;
+  }
+
+  .col:last-child .features{
+    order: 0;
+  }
+
+  .feature{
+    font-size: 12.6px;
+  }
+
+  .feature p{
+    margin-top: 5px;
+  }
+
+  .colDescription .text{
+    text-align: center;
+  }
+
+  .colDescription {
+    height: auto !important;
+  }
+
+  .colDescription .achievement{
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .achievement div{
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .learnMore{
+    width: 40%;
+    height: 50px;
+    margin: 0px auto;
+    cursor: pointer;
+  }
+
+  .ourFeatures{
+    height: fit-content !important;
+  }
+
+  .ourFeatures .sectionContent{
+    height: auto !important;
+    flex-wrap: wrap;
+  }
+
+  .sectionContent .featuresOptions{
+    width: 90% !important;
+    height: auto;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+    gap: px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .sectionContent .featuresOptions button{
+    font-size: 0.76rem !important;
+  }
+
+  .sectionContent .featuresContainer{
+    width: 95% !important;
+    height: auto !important;
+    flex-wrap: wrap;
+  }
+
+  .sectionContent .featuresContainer div{
+    width: 100% !important;
+    display: block;
+  }
+
+  .popularQuestions{
+    margin: 0 auto !important;
+  }
+
+  .questions{
+    height: auto !important;
+    width: 100% !important;
+    flex-wrap: wrap;
+    margin: 50px auto;
+  }
+
+  .questionCard {
+    height: auto !important;
+    width: 90% !important;
+  }
+
+  .testimonialsCards{
+    height: auto !important;
+    width: 100%;
+    gap: 70px;
+    flex-wrap: wrap !important;
+  }
+
+  .testimonialsCards .card{
+    height: auto !important;
+    width: 90% !important;
+  }
+
+  .lastOpenAccount{
+    height: 60vh;
+    padding: 10px;
+  }
+
+  .lastOpenAccount .sectionHeader{
+    padding: 20px 0;
+    gap: 40px !important;
+  }
+
+  .sectionHeader .text{
+    width: 90%;
+    gap: 10px;
+  }
+
+  .lastOpenAccount .btn{
+    width: 60%;
+  }
+}
