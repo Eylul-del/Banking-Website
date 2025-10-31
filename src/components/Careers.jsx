@@ -3,12 +3,12 @@ import '../components/style/Carees.css'
 import FAQ from "./FAQ.jsx";
 import OpenAccount from './OpenAccount.jsx';
 import signUp from './SignUp.jsx'
-import mainImage from 'public/images/img/Careers/mainImage.png';
-import IconContainer from 'public/images/img/Careers/Icon Container.png';
-import IconContainer1 from 'public/images/img/Careers/Icon Container (1).png';
-import IconContainer2 from 'public/images/img/Careers/Icon Container (2).png';
-import IconContainer3 from 'public/images/img/Careers/Icon Container (3).png';
-import Icon from 'public/images/img/Careers/Icon.png';
+import mainImage from '../assets/images/img/Careers/mainImage.png';
+import IconContainer from '../assets/images/img/Careers/Icon Container.png';
+import IconContainer1 from '../assets/images/img/Careers/Icon Container (1).png';
+import IconContainer2 from '../assets/images/img/Careers/Icon Container (2).png';
+import IconContainer3 from '../assets/images/img/Careers/Icon Container (3).png';
+import Icon from '../assets/images/img/Careers/Icon.png';
 
 export default function Careers(){
     return(
